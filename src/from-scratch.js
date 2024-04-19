@@ -48,7 +48,10 @@ const matchAllNumbersAsNumbers = (str) => {
   return newArr
 };
 
-const matchAllWords = (str) => { };
+const matchAllWords = (str) => {
+  if (str.match(/[a-zA-Z']+/g)) return str.match(/[a-zA-Z']+/g);
+  return [];
+};
 
 const replaceAllNumbers = (str) => { };
 
