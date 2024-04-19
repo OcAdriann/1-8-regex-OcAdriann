@@ -2,7 +2,9 @@ const helloWorldRegex = (str) => {
   return /Hello world/i.test(str)
 };
 
-const hasAVowel = (str) => { };
+const hasAVowel = (str) => {
+  return /[aeiou]/i.test(str);
+};
 
 const hasCatsOrDogs = (str) => { };
 
