@@ -65,7 +65,12 @@ const nameRedacter = (str) => {
   return str.replace(/[A-Z]{2,}/g, "REDACTED")
 };
 
-const camelToSnakeCase = (str) => { };
+const camelToSnakeCase = (str) => {
+  const convertToSnakeCase = (letter, index) => { // Make a function to change the matches accordingly.
+    return (index > 0 ? '_' : '') + letter.toLowerCase(); // If the index is above 0, add a underscore and then concatenate the letter in lowercase.
+  };
+  return str.replaceAll(/[A-Z]/g, convertToSnakeCase); // Call the replace and invoke the previous function for replacing.
+};
 
 module.exports = {
   helloWorldRegex,
