@@ -26,7 +26,9 @@ const hasNoFlippers = (str) => {
   return !/[BCcDEHIKOoXxl]/g.test(str)
 };
 
-const isValidEmail = (str) => { };
+const isValidEmail = (str) => {
+  return /^[\w.]+@[\w]+\.[\w]{2,4}/.test(str);
+};
 
 const isValidPhoneNumber = (str) => { };
 
