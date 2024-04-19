@@ -57,7 +57,9 @@ const replaceAllNumbers = (str) => {
   return str.replace((/\d+/g), '???')
 };
 
-const fixFileName = (str) => { };
+const fixFileName = (str) => {
+  return str.replaceAll(/\s+/g, '_');
+};
 
 const nameRedacter = (str) => { };
 
