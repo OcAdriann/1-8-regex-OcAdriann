@@ -39,7 +39,14 @@ const matchAllNumbers = (str) => {
   return [];
 };
 
-const matchAllNumbersAsNumbers = (str) => { };
+const matchAllNumbersAsNumbers = (str) => {
+  const newArr = str.match(/\d+/g);
+  if (newArr === null) return [];
+  for (const e in newArr) {
+    newArr[e] = Number(newArr[e]);
+  }
+  return newArr
+};
 
 const matchAllWords = (str) => { };
 
