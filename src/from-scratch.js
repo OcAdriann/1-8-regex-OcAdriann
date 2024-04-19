@@ -23,14 +23,16 @@ const hasNothingOrDigits = (str) => {
 };
 
 const hasNoFlippers = (str) => {
-  return !/[BCcDEHIKOoXxl]/g.test(str)
+  return !/[BCcDEHIKOoXxl]/g.test(str);
 };
 
 const isValidEmail = (str) => {
   return /^[\w.]+@[\w]+\.[\w]{2,4}/.test(str);
 };
 
-const isValidPhoneNumber = (str) => { };
+const isValidPhoneNumber = (str) => {
+  return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/g.test(str);
+};
 
 const matchAllNumbers = (str) => { };
 
