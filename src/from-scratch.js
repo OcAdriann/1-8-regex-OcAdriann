@@ -34,7 +34,10 @@ const isValidPhoneNumber = (str) => {
   return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/g.test(str);
 };
 
-const matchAllNumbers = (str) => { };
+const matchAllNumbers = (str) => {
+  if (str.match(/\d+/g)) return str.match(/\d+/g);
+  return [];
+};
 
 const matchAllNumbersAsNumbers = (str) => { };
 
