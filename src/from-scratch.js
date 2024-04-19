@@ -19,7 +19,7 @@ const hasPunctuationEnd = (str) => {
 };
 
 const hasNothingOrDigits = (str) => {
-  return /[.!?]$/.test(str);
+  return !/[a-zA-Z]/gi.test(str);
 };
 
 const hasNoFlippers = (str) => { };
