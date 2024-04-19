@@ -1,5 +1,5 @@
 const helloWorldRegex = (str) => {
-  return /Hello world/i.test(str)
+  return /Hello world/i.test(str);
 };
 
 const hasAVowel = (str) => {
@@ -7,14 +7,16 @@ const hasAVowel = (str) => {
 };
 
 const hasCatsOrDogs = (str) => {
-  return /(cats|dogs)/i.test(str)
+  return /(cats|dogs)/i.test(str);
 };
 
 const hasVowelStart = (str) => {
   return /^[aeiou]/i.test(str);
 };
 
-const hasPunctuationEnd = (str) => { };
+const hasPunctuationEnd = (str) => {
+  return /[.!?]$/.test(str);
+};
 
 const hasNothingOrDigits = (str) => { };
 
