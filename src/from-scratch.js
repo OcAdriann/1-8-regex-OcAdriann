@@ -6,7 +6,9 @@ const hasAVowel = (str) => {
   return /[aeiou]/i.test(str);
 };
 
-const hasCatsOrDogs = (str) => { };
+const hasCatsOrDogs = (str) => {
+  return /(cats|dogs)/i.test(str)
+};
 
 const hasVowelStart = (str) => { };
 
